@@ -22,7 +22,6 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const openCart = () => setIsCartOpen(true);
 
-  // Cart state change hone par localStorage me save 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
